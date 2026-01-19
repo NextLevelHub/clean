@@ -1,166 +1,62 @@
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Care Cleaning Ltd. | Top-Rated Professional Cleaning & Removal Services</title>
-    <meta name="description" content="Care Cleaning Limited provides expert domestic, commercial, and removal services. 15+ years of excellence, eco-friendly products, and fully vetted staff in Cityville." />
-    <meta name="keywords" content="professional cleaning, domestic cleaning, commercial cleaning, removal services, eco-friendly cleaning, office cleaning cityville, end of tenancy cleaning" />
-    <link rel="canonical" href="https://carecleaning.com" />
-    <meta name="robots" content="index, follow" />
-    
-    <!-- Structured Data: LocalBusiness & Services -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Care Cleaning Ltd.",
-      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop",
-      "@id": "https://carecleaning.com",
-      "url": "https://carecleaning.com",
-      "telephone": "+15551234567",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Clean Street, Suite 100",
-        "addressLocality": "Cityville",
-        "addressRegion": "ST",
-        "postalCode": "12345",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 40.7128,
-        "longitude": -74.0060
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "08:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/carecleaning",
-        "https://www.instagram.com/carecleaning"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Cleaning and Removal Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Domestic Cleaning",
-              "description": "Professional regular home keeping, deep cleans, and end of tenancy cleaning."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Commercial Cleaning",
-              "description": "Office spaces, retail sanitation, and industrial cleaning services."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Removal Services",
-              "description": "Stress-free house moving assistance, packing services, and safe transport."
-            }
-          }
-        ]
-      }
-    }
-    </script>
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://carecleaning.com/" />
-    <meta property="og:title" content="Care Cleaning Ltd. | Professional Cleaning & Removal" />
-    <meta property="og:description" content="Reliable domestic and commercial cleaning tailored to your needs. 15+ years of excellence." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Care Cleaning Ltd. | Professional Cleaning & Removal" />
-    <meta property="twitter:description" content="Reliable domestic and commercial cleaning tailored to your needs." />
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>CARE Cleaning - Professional Cleaning & Removal Services</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
       tailwind.config = {
+        darkMode: "class",
         theme: {
           extend: {
             colors: {
-              primary: "#0f4280",
-              accent: "#2EC4B6",
-              "background-light": "#f6f7f8",
-              "background-dark": "#111821",
+              primary: "#0099D6",
+              "background-light": "#FFFFFF",
+              "background-dark": "#0F172A",
+              "secondary": "#0A2463",
+              "accent": "#FFB800"
             },
             fontFamily: {
-              sans: ["Inter", "sans-serif"],
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              sans: ["Plus Jakarta Sans", "sans-serif"],
             },
-            screens: {
-              'xs': '480px',
+            borderRadius: {
+              DEFAULT: "12px",
+              "xl": "24px",
             },
           },
         },
       };
     </script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 80px;
-      }
-      body {
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-      }
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      .fill-icon {
-        font-variation-settings: 'FILL' 1;
-      }
-      /* Prevent CLS for icons */
-      .material-symbols-outlined {
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        overflow: hidden;
-      }
+    <style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-overlay {
+            background: linear-gradient(90deg, rgba(0, 153, 214, 0.8) 0%, rgba(0, 153, 214, 0.4) 100%);
+        }
     </style>
 
 <link rel="stylesheet" href="/index.css">
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@18.3.1",
-    "react/": "https://esm.sh/react@18.3.1/",
-    "react-dom": "https://esm.sh/react-dom@18.3.1",
-    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
-    "framer-motion": "https://esm.sh/framer-motion@11.11.11?external=react,react-dom"
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
   }
 }
 </script>
-  <script type="module" crossorigin src="/clean/assets/index-B90Rll9D.js"></script>
+  <script type="module" crossorigin src="/assets/index-BuPlK9dd.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-2d6kTBOk.css">
 </head>
-  <body>
+<body class="font-sans text-slate-800 dark:text-slate-200 bg-background-light dark:bg-background-dark antialiased">
     <div id="root"></div>
 </body>
 </html>
